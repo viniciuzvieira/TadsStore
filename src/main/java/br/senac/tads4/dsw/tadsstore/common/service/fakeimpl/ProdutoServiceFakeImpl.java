@@ -37,6 +37,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.LinkedHashSet;
 import java.util.Map;
+import org.hibernate.validator.internal.util.logging.Log;
 
 /**
  *
@@ -125,5 +126,10 @@ public class ProdutoServiceFakeImpl implements ProdutoService {
   public void remover(long idProduto) {
     throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
   }
+
+    @Override
+    public Produto obter(Log id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
 }

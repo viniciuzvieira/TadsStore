@@ -2,10 +2,10 @@
     
     <div>
         <img src="imagem.jpg" />
-        <h2>Nome do produto</h2>
-        <p>Detalhe dtalhe</p>
-         <p>Detalhe dtalhe</p>
-        <a href="detalhe.html">Ver detalhe</a>
+        <h2 th:text="$prod.nome}">Nome do produto</h2>
+        <p th:text="$prod.descricao}">Detalhe</p>
+         <p th:text="$prod.precoVenda}">100</p>
+        <a href="detalhe.html" th:action="@{/carrinho/{id} (id==${prod.id})}">Ver detalhe</a>
         <form action="" method="post">
             <button>Comprar</button>
                 
